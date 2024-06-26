@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col-3 pt-2" *ngFor='let category of categoryList' (click)="navigate(category)">
+            <a>
+                <div class="card card-food">
+                    <img class="card-img-top" [src]="category.photoUrl" alt="Pav Bhaji">
+                    <div class="card-body">
+                        <h5 class="card-title">{{category.categoryName}}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
